@@ -1,12 +1,8 @@
-### [https://www.MyHow.hotelbyte.foundation](https://www.MyHow.hotelbyte.foundation)
+### [https://MyHOW.hotelbyte.foundation](https://MyHow.hotelbyte.foundation)
 
-### [Chrome Extension](https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm)
+### [Chrome Extension]()
 
-### [Download the Latest Release](https://github.com/kvhnuke/etherwallet/releases/latest)
-
-- etherwallet-vX.X.X.X.zip is the smaller package containing the gh-pages branch aka MyHow.hotelbyte.foundation
-- chrome-extension-vX.X.X.X.zip is the chrome extension package
-- source code is the full source for developers to get started with (although cloning or forking the mercury branch is probably a better choice)
+### [Download the Latest Release](https://github.com/hotelbyte/web-wallet/releases/latest)
 
 
 ### MEW Around the Web
@@ -29,7 +25,7 @@
 - [jordan (cmo) reddit: https://www.reddit.com/user/trogdortb001](https://www.reddit.com/user/trogdortb001)
 - [myetherwallet reddit user: https://www.reddit.com/user/myetherwallet](https://www.reddit.com/user/myetherwallet)
 
-### `mercury` is the development branch. gh-pages contains only the smaller dist folder only and is served to MyHow.hotelbyte.foundation
+### `master` is the development branch. gh-pages contains only the smaller dist folder only and is served to MyHow.hotelbyte.foundation
 
 - Our infrastructure ("node") is on AWS. [You can also use your own node.](https://myetherwallet.github.io/knowledge-base/networks/run-your-own-node-with-myetherwallet.html)
 - We also provide access to Infura.io & Etherscan.io nodes. Use the drop-down in the top-right.
