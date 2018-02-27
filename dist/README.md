@@ -1,17 +1,13 @@
-### [https://www.MyHow.hotelbyte.foundation](https://www.MyHow.hotelbyte.foundation)
+### [https://MyHOW.hotelbyte.foundation](https://MyHow.hotelbyte.foundation)
 
-### [Chrome Extension](https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm)
+### [Chrome Extension]()
 
-### [Download the Latest Release](https://github.com/kvhnuke/etherwallet/releases/latest)
-
-- etherwallet-vX.X.X.X.zip is the smaller package containing the gh-pages branch aka MyHow.hotelbyte.foundation
-- chrome-extension-vX.X.X.X.zip is the chrome extension package
-- source code is the full source for developers to get started with (although cloning or forking the mercury branch is probably a better choice)
+### [Download the Latest Release](https://github.com/hotelbyte/web-wallet/releases/latest)
 
 
 ### MEW Around the Web
 
-- [Website: https://www.myetherwallet.com/](https://www.myetherwallet.com/)
+- [Website: https://myhow.hotelbyte.foundation/](https://myhow.hotelbyte.foundation/)
 - [CX: https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm](https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm)
 - [Anti-phish CX](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn)
 - [FB: https://www.facebook.com/MyHotelWallet/](https://www.facebook.com/MyHotelWallet/)
@@ -29,7 +25,7 @@
 - [jordan (cmo) reddit: https://www.reddit.com/user/trogdortb001](https://www.reddit.com/user/trogdortb001)
 - [myetherwallet reddit user: https://www.reddit.com/user/myetherwallet](https://www.reddit.com/user/myetherwallet)
 
-### `mercury` is the development branch. gh-pages contains only the smaller dist folder only and is served to MyHow.hotelbyte.foundation
+### `master` is the development branch. gh-pages contains only the smaller dist folder only and is served to MyHow.hotelbyte.foundation
 
 - Our infrastructure ("node") is on AWS. [You can also use your own node.](https://myetherwallet.github.io/knowledge-base/networks/run-your-own-node-with-myetherwallet.html)
 - We also provide access to Infura.io & Etherscan.io nodes. Use the drop-down in the top-right.
@@ -55,8 +51,8 @@
     - tokenSymbol=[ARC | ICN | MKR | ....]
     - gasLimit=[number] OR gas=[number]
     - data=[hex data]
-    - Example 1: https://www.myetherwallet.com/?to=0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D&value=1&tokenSymbol=REP&gaslimit=50000#send-transaction
-    - Example 2: https://www.myetherwallet.com/?to=0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D&value=1&gaslimit=23000&data=0x5468616e6b20796f752c204d455720322e30#send-transaction
+    - Example 1: https://myhow.hotelbyte.foundation/?to=0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D&value=1&tokenSymbol=REP&gaslimit=50000#send-transaction
+    - Example 2: https://myhow.hotelbyte.foundation/?to=0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D&value=1&gaslimit=23000&data=0x5468616e6b20796f752c204d455720322e30#send-transaction
 
 
 
@@ -116,7 +112,7 @@ If you want to help contribute, here's what you need to know to get it up and ru
 - `layouts` are the pages themselves. These basically take all the pieces of the pages and compile into one massive page. The navigation is also found here...sort of.
     * `index.html` is for MyHow.hotelbyte.foundation.
     * `cx-wallet.html` is the main page for the Chrome Extension.
-    * `embedded.html` is for https://www.myetherwallet.com/embedded.html.
+    * `embedded.html` is for https://myhow.hotelbyte.foundation/embedded.html.
 
 - You can control what shows up on MyHotelWallet vs the Chrome Extension by using: `@@if (site === 'cx' )  {  ...  }` and `@@if (site === 'mew' ) { ... }`. Check out `sendTransaction.tpl` to see it in action. The former will only compile for the Chrome Extension. The latter only to MyHow.hotelbyte.foundation.
 - `embedded.html` is for embedding the wallet generation into third-party sites. [Read more about it and how to listen for the address generated here.](https://www.reddit.com/r/ethereum/comments/4gn37o/embeddable_myetherwallet_super_simple_wallet/)

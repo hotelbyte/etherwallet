@@ -4,7 +4,7 @@ nodes.customNode = require('./nodeHelpers/customNode');
 nodes.infuraNode = require('./nodeHelpers/infura');
 nodes.metamaskNode = require('./nodeHelpers/metamask');
 nodes.nodeTypes = {
-    HBF: "Hotelbyte"
+    HBF: "Hotelcoin"
 };
 nodes.ensNodeTypes = [nodes.nodeTypes.HBF, nodes.nodeTypes.Ropsten];
 nodes.domainsaleNodeTypes = []
