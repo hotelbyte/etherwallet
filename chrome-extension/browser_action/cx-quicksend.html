@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Quicksend - MyEtherWallet Chrome Extension</title>
-  <meta name="description" content="MyEtherWallet is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely.">
+  <title>Quicksend - MyHotelWallet Chrome Extension</title>
+  <meta name="description" content="MyHotelWallet is a free, open-source, client-side interface for generating Hotelbyte wallets &amp; more. Interact with the Hotelbyte blockchain easily &amp; securely.">
   <link rel="stylesheet" href="../css/etherwallet-master.min.css">
   <script type="text/javascript" src="../js/etherwallet-static.min.js"></script>
   <script type="text/javascript" src="../js/etherwallet-master.js"></script>
@@ -38,7 +38,7 @@
               </td>
               <td>
                 <label>{{twallet.nick}}</label><small class="quicksend-address">{{twallet.addr}}</small></td>
-              <td>{{twallet.balanceR | number:2 | number}} ETH</td>
+              <td>{{twallet.balanceR | number:2 | number}} HBF</td>
             </tr>
           </tbody>
         </table>
@@ -58,7 +58,7 @@
           <input class="form-control" type="text" placeholder="{{ 'SEND_amount_short' | translate }}" ng-model="tx.value" />
           <div class="radio">
             <label>
-              <input type="radio" name="currencyRadio" value="ether" ng-model="tx.unit" />Ether</label>
+              <input type="radio" name="currencyRadio" value="ether" ng-model="tx.unit" />Hotelcoin</label>
             <label>
               <input type="radio" name="currencyRadio" value="finney" ng-model="tx.unit" />Finney</label>
             <label>

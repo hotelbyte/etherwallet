@@ -312,7 +312,7 @@
           <strong>
             {{etherBalance}}
           </strong>
-          ETH
+          HBF
         </li>
       </ul>
 
@@ -461,13 +461,13 @@
                   <span ng-bind="HDWallet.defaultDPath"></span>
                 </label>
               </td>
-              <td> Jaxx, Metamask, Exodus, imToken &amp; TREZOR (ETH)</td>
+              <td> Jaxx, Metamask, Exodus, imToken &amp; TREZOR (HBF)</td>
             </tr>
 
             <tr>
               <td>
                 <label class="radio">
-                  <input aria-describedby="Path: Ledger (ETH) {{HDWallet.ledgerPath}}"
+                  <input aria-describedby="Path: Ledger (HBF) {{HDWallet.ledgerPath}}"
                          ng-change="onHDDPathChange()"
                          ng-model="HDWallet.dPath"
                          type="radio"
@@ -475,7 +475,7 @@
                   <span ng-bind="HDWallet.ledgerPath"></span>
                 </label>
               </td>
-              <td> Ledger (ETH)</td>
+              <td> Ledger (HBF)</td>
             </tr>
 
             <tr>

@@ -11,18 +11,18 @@
   <section class="row order-panel">
     <div class="col-sm-6 order-info">
       <p class="mono">
-        <input class="form-control input-sm" ng-model="priceTicker.ETHBTC"/>
-        <span>ETH = {{bity.curRate.ETHBTC*priceTicker.ETHBTC | number: 6}} BTC</span>
+        <input class="form-control input-sm" ng-model="priceTicker.HBFBTC"/>
+        <span>HBF = {{bity.curRate.HBFBTC*priceTicker.HBFBTC | number: 6}} BTC</span>
       </p>
       <p class="mono">
-        <input class="form-control input-sm" ng-model="priceTicker.ETHREP"/>
-        <span>ETH = {{bity.curRate.ETHREP*priceTicker.ETHREP | number: 6}} REP</span>
+        <input class="form-control input-sm" ng-model="priceTicker.HBFREP"/>
+        <span>HBF = {{bity.curRate.HBFREP*priceTicker.HBFREP | number: 6}} REP</span>
       </p>
     </div>
     <div class="col-sm-6 order-info">
       <p class="mono">
-        <input class="form-control input-sm" ng-model="priceTicker.BTCETH"/>
-        <span>BTC = {{bity.curRate.BTCETH*priceTicker.BTCETH | number: 6}} ETH</span>
+        <input class="form-control input-sm" ng-model="priceTicker.BTCHBF"/>
+        <span>BTC = {{bity.curRate.BTCHBF*priceTicker.BTCHBF | number: 6}} HBF</span>
       </p>
       <p class="mono">
         <input class="form-control input-sm" ng-model="priceTicker.BTCREP"/>

@@ -41,7 +41,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
     $scope.setdPath = function() {
         if ($scope.walletType == "ledger") {
             switch ($scope.nodeType) {
-                case nodes.nodeTypes.ETH:
+                case nodes.nodeTypes.HBF:
                     $scope.HDWallet.dPath = $scope.HDWallet.ledgerPath;
                     break;
                 case nodes.nodeTypes.ETC:
@@ -58,7 +58,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
             }
         } else if ($scope.walletType == "trezor") {
             switch ($scope.nodeType) {
-                case nodes.nodeTypes.ETH:
+                case nodes.nodeTypes.HBF:
                     $scope.HDWallet.dPath = $scope.HDWallet.trezorPath;
                     break;
                 case nodes.nodeTypes.ETC:
@@ -90,7 +90,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
             }
         } else {
           switch ($scope.nodeType) {
-                case nodes.nodeTypes.ETH:
+                case nodes.nodeTypes.HBF:
                     $scope.HDWallet.dPath = $scope.HDWallet.defaultDPath;
                     break;
                 case nodes.nodeTypes.ETC:
@@ -219,7 +219,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
         $scope.wallet = null;
         try {
             if ($scope.showPDecrypt && $scope.requirePPass) {
-                $scope.wallet = Wallet.fromMyEtherWalletKey($scope.manualprivkey, $scope.privPassword);
+                $scope.wallet = Wallet.fromMyHotelWalletKey($scope.manualprivkey, $scope.privPassword);
                 walletService.password = $scope.privPassword;
             } else if ($scope.showPDecrypt && !$scope.requirePPass) {
                 if (!$scope.Validator.isValidHex($scope.manualprivkey)) {

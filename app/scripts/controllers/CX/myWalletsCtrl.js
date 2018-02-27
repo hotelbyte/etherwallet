@@ -114,7 +114,7 @@ var myWalletsCtrl = function ($scope, $sce, walletService) {
         try {
             var priv = $scope.allWallets[$scope.viewWallet.id].priv;
             if (priv.length == 132)
-                $scope.wallet = Wallet.fromMyEtherWalletKey(priv, $scope.password);
+                $scope.wallet = Wallet.fromMyHotelWalletKey(priv, $scope.password);
             else
                 $scope.wallet = Wallet.getWalletFromPrivKeyFile(priv, $scope.password);
             $scope.viewModal.close();
@@ -151,7 +151,7 @@ var myWalletsCtrl = function ($scope, $sce, walletService) {
             $scope.removeModal.close();
         });
     };
-    ajaxReq.getETHvalue(function (data) {
+    ajaxReq.getHBFvalue(function (data) {
         $scope.fiatVal.usd = data.usd;
         $scope.fiatVal.eur = data.eur;
         $scope.fiatVal.btc = data.btc;

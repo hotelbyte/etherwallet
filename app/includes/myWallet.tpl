@@ -28,12 +28,12 @@
             ng-show="!showLongBal"
             ng-dblclick="showLongBal=!showLongBal"
             title="{{twallet.balance}} (Double-Click)" >
-              {{twallet.balance|number}} ETH
+              {{twallet.balance|number}} HBF
         </h3>
         <h3 class="text-success point"
             ng-show="showLongBal"
             ng-dblclick="showLongBal=!showLongBal">
-              {{twallet.balance }} ETH
+              {{twallet.balance }} HBF
         </h3>
         <span class="point"
               ng-repeat="token in twallet.tokens"
@@ -94,13 +94,13 @@
               ng-show="!showLongBal"
               ng-dblclick="showLongBal=!showLongBal"
               title="{{twallet.balance}} (Double-Click)" >
-                {{twallet.balance|number}} ETH
+                {{twallet.balance|number}} HBF
           </h3>
 
           <h3 class="text-success point"
               ng-show="showLongBal"
               ng-dblclick="showLongBal=!showLongBal">
-                {{twallet.balance }} ETH
+                {{twallet.balance }} HBF
           </h3>
 
           <span class="point"
@@ -265,7 +265,7 @@
             Be sure you have **saved the private key and/or Keystore File and the password** before you remove it.
           </p>
           <p translate="MYWAL_Content_3">
-            If you want to use this wallet with your MyEtherWallet CX in the future, you will need to manually re-add.
+            If you want to use this wallet with your MyHotelWallet CX in the future, you will need to manually re-add.
           </p>
           <h4 translate="SENDModal_Content_3">
             Are you sure you want to do this?

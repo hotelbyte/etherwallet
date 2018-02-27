@@ -1,8 +1,8 @@
 {
-    "name": "MyEtherWallet",
+    "name": "MyHotelWallet",
     "version": "3.11.3.3",
-    "description": "An NPM dist of MyEtherWallet. For easier downloading & updating via CLI.",
-    "author": "MyEtherWallet",
+    "description": "An NPM dist of MyHotelWallet. For easier downloading & updating via CLI.",
+    "author": "MyHotelWallet",
     "license": "ISC",
     "devDependencies": {
         "open": "0.0.5"

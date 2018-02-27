@@ -6,7 +6,7 @@
       <article class="cont-md">
         <h1 class="text-center" translate="NAV_DomainSale"> DomainSale </h1>
         <p>
-          <a href="https://medium.com/@jgm.orinoco/domainsale-an-on-chain-secondary-ens-market-b3330f6e5dda" target="_blank" rel="noopener noreferrer">DomainSale</a> is a secondary market for the <a href="http://ens.readthedocs.io/en/latest/introduction.html" target="_blank" rel="noopener noreferrer">Ethereum Name Service</a> that allows you to buy and sell domains that are already owned.
+          <a href="https://medium.com/@jgm.orinoco/domainsale-an-on-chain-secondary-ens-market-b3330f6e5dda" target="_blank" rel="noopener noreferrer">DomainSale</a> is a secondary market for the <a href="http://ens.readthedocs.io/en/latest/introduction.html" target="_blank" rel="noopener noreferrer">Hotelbyte Name Service</a> that allows you to buy and sell domains that are already owned.
         </p>
       </article>
       <!-- / Title -->
@@ -57,7 +57,7 @@
 
   <!-- IF NOT DOMAINSALE CHAIN -->
   <div ng-hide="showDomainSale()" class="alert alert-danger text-center">
-    <p> DomainSale is only available on the ETH and Ropsten (Testnet) chains. You are currently on the {{ajaxReq.type}} chain. <br /> Please use the node switcher in the upper right corner to select "ETH" or "Ropsten". </p>
+    <p> DomainSale is only available on the HBF and Ropsten (Testnet) chains. You are currently on the {{ajaxReq.type}} chain. <br /> Please use the node switcher in the upper right corner to select "HBF" or "Ropsten". </p>
   </div>
   <!-- / IF NOT DOMAINSALE CHAIN -->
 

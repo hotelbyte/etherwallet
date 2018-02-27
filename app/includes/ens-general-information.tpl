@@ -16,7 +16,7 @@
         Decide which account you wish to own the name & ensure you have multiple backups of that account.
       </li>
       <li translate="ENS_Helper_4">
-        Decide the maximum amount of ETH you are willing to pay for the name (your <u>Bid Amount</u>). Ensure that account has enough to cover your bid + 0.01 ETH for gas.
+        Decide the maximum amount of HBF you are willing to pay for the name (your <u>Bid Amount</u>). Ensure that account has enough to cover your bid + 0.01 HBF for gas.
       </li>
     </ul>
 
@@ -70,7 +70,7 @@
         Once the auction has ended (after 5 days / 120 hours), the winner needs to finalize the auction in order to claim their new name.
       </li>
       <li translate="ENS_Helper_16">
-        The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will refunded all but 0.01 ETH.
+        The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will refunded all but 0.01 HBF.
       </li>
     </ul>
 
@@ -107,7 +107,7 @@
            target="_blank"
            rel="noopener noreferrer"
            translate="ENS_Helper_21">
-              Announcing the Ethereum Name Service Relaunch Date!
+              Announcing the Hotelbyte Name Service Relaunch Date!
         </a>
       </li>
     </ul>

@@ -49,7 +49,7 @@
       <div class="progress-circle"><i>4</i></div>
       <p>
         <span translate="SWAP_progress_4">Sending your </span> {{orderResult.output.currency}} <br />
-        <small ng-show="orderResult.input.currency=='ETH'"> Waiting for 10 confirmations... </small>
+        <small ng-show="orderResult.input.currency=='HBF'"> Waiting for 10 confirmations... </small>
         <small ng-show="orderResult.input.currency=='BTC'"> Waiting for 1 confirmation... </small>
       </p>
     </div>
@@ -70,12 +70,12 @@
   </section>
 
 
-  <!-- Swap CTA ETH -->
+  <!-- Swap CTA HBF -->
   <article class="row" ng-show="showStage3Eth && orderResult.progress.status=='OPEN'">
     <section class="clearfix collapse-container">
       <div class="text-center" ng-click="wd = !wd">
         <a class="collapse-button"><span ng-show="wd">+</span><span ng-show="!wd">-</span></a>
-        <h5 traslate="SWAP_unlock">Unlock your wallet to send ETH or Tokens directly from this page.</h5>
+        <h5 traslate="SWAP_unlock">Unlock your wallet to send HBF or Tokens directly from this page.</h5>
       </div>
       <div ng-show="!wd">
           @@if (site === 'mew' ) {  <wallet-decrypt-drtv></wallet-decrypt-drtv>         }
@@ -83,9 +83,9 @@
       </div>
     </section>
 
-    <div class="alert alert-danger" ng-show="ajaxReq.type!=='ETH'">
-      <strong>Warning! You are not connected to an ETH node.</strong> <br />
-      Please use the node switcher in the top-right corner to switch to an ETH node. We <strong>do not</strong> support swapping ETC or Testnet ETH.
+    <div class="alert alert-danger" ng-show="ajaxReq.type!=='HBF'">
+      <strong>Warning! You are not connected to an HBF node.</strong> <br />
+      Please use the node switcher in the top-right corner to switch to an HBF node. We <strong>do not</strong> support swapping ETC or Testnet HBF.
     </div>
 
     <section class="row" ng-show="wallet!=null" ng-controller='sendTxCtrl'>
@@ -96,7 +96,7 @@
       @@if (site === 'cx'  ) { @@include( './sendTx-modal.tpl',   { "site": "cx"  } ) }
     </section>
   </article>
-  <!-- / Swap CTA ETH -->
+  <!-- / Swap CTA HBF -->
 
 
   <!-- Swap CTA BTC -->

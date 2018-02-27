@@ -6,19 +6,19 @@ var swapCtrl = function($scope, $sce, walletService) {
     $scope.Validator = Validator;
     $scope.bity = new bity();
     $scope.bity.refreshRates(function() {
-        $scope.setOrderCoin(true, "ETH");
+        $scope.setOrderCoin(true, "HBF");
     });
     setInterval(function() {
         $scope.bity.refreshRates();
     }, 30000);
-    $scope.priceTicker = { ETHBTC: 1, ETHREP: 1, BTCREP: 1, BTCETH: 1, REPBTC: 1, REPETH: 1 };
-    $scope.availableCoins = ["ETH", "BTC", "REP"];
+    $scope.priceTicker = { HBFBTC: 1, HBFREP: 1, BTCREP: 1, BTCHBF: 1, REPBTC: 1, REPHBF: 1 };
+    $scope.availableCoins = ["HBF", "BTC", "REP"];
     var initValues = function() {
         $scope.showStage1 = true;
         $scope.showStage2 = $scope.showStage3Eth = $scope.showStage3Btc = false;
         $scope.orderResult = null;
         $scope.swapOrder = {
-            fromCoin: "ETH",
+            fromCoin: "HBF",
             toCoin: "BTC",
             isFrom: true,
             fromVal: '',
@@ -40,7 +40,7 @@ var swapCtrl = function($scope, $sce, walletService) {
             if (!$scope.bity.priceLoaded) return errors.priceNotLoaded;
             else if ($scope.swapOrder.toVal < bity.min || $scope.swapOrder.fromVal < bity.min) return errors.lessThanMin;
             else if (($scope.swapOrder.toCoin == "BTC" && $scope.swapOrder.toVal > bity.max) || ($scope.swapOrder.fromCoin == "BTC" && $scope.swapOrder.fromVal > bity.max)) return errors.greaterThanMax;
-            else if (($scope.swapOrder.toCoin == "ETH" && $scope.swapOrder.toVal * $scope.bity.curRate['ETHBTC'] > bity.max) || ($scope.swapOrder.fromCoin == "ETH" && $scope.swapOrder.fromVal * $scope.bity.curRate['ETHBTC'] > bity.max)) return errors.greaterThanMax;
+            else if (($scope.swapOrder.toCoin == "HBF" && $scope.swapOrder.toVal * $scope.bity.curRate['HBFBTC'] > bity.max) || ($scope.swapOrder.fromCoin == "HBF" && $scope.swapOrder.fromVal * $scope.bity.curRate['HBFBTC'] > bity.max)) return errors.greaterThanMax;
             else if (($scope.swapOrder.toCoin == "REP" && $scope.swapOrder.toVal * $scope.bity.curRate['REPBTC'] > bity.max) || ($scope.swapOrder.fromCoin == "REP" && $scope.swapOrder.fromVal * $scope.bity.curRate['REPBTC'] > bity.max)) return errors.greaterThanMax;
             return errors.noErrors;
         }
@@ -49,7 +49,7 @@ var swapCtrl = function($scope, $sce, walletService) {
         else if (vResult == errors.priceNotLoaded) return false;
         else if (vResult == errors.lessThanMin || vResult == errors.greaterThanMax) {
             if (!isStorageOrderExists()) {
-              uiFuncs.notifier.danger((globalFuncs.errorMsgs[27] + bity.max + " BTC, " + (bity.max / $scope.bity.curRate['ETHBTC']).toFixed(3) + " ETH, or " + (bity.max / $scope.bity.curRate['REPBTC']).toFixed(3) + " REP"), 2500);
+              uiFuncs.notifier.danger((globalFuncs.errorMsgs[27] + bity.max + " BTC, " + (bity.max / $scope.bity.curRate['HBFBTC']).toFixed(3) + " HBF, or " + (bity.max / $scope.bity.curRate['REPBTC']).toFixed(3) + " REP"), 2500);
               $scope.showedMinMaxError = true;
             }
             return false;
@@ -182,8 +182,8 @@ var swapCtrl = function($scope, $sce, walletService) {
             $scope.parentTxConfig = {
                 to: ethUtil.toChecksumAddress($scope.orderResult.payment_address),
                 value: $scope.orderResult.input.amount,
-                sendMode: $scope.orderResult.input.currency == 'ETH' ? 'ether' : 'token',
-                tokensymbol: $scope.orderResult.input.currency == 'ETH' ? '' : $scope.orderResult.input.currency,
+                sendMode: $scope.orderResult.input.currency == 'HBF' ? 'ether' : 'token',
+                tokensymbol: $scope.orderResult.input.currency == 'HBF' ? '' : $scope.orderResult.input.currency,
                 readOnly: true
             }
             new Modal(document.getElementById('sendTransaction'));

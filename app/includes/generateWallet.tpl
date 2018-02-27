@@ -122,7 +122,7 @@
         <li>
           <p>
             <strong>
-              Mist / Geth / Parity:
+              Mist / Ghbc / Parity:
             </strong>
             <span translate="GEN_Help_1">
               Use your
@@ -211,7 +211,7 @@
       </h2>
       <ul>
         <li translate="GEN_Help_12">
-          Use it to unlock your wallet via MyEtherWallet (or Mist, Geth, Parity &amp; other wallet clients.)
+          Use it to unlock your wallet via MyHotelWallet (or Mist, Ghbc, Parity &amp; other wallet clients.)
         </li>
       </ul>
 

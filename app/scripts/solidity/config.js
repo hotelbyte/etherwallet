@@ -34,10 +34,10 @@
  */
 
 
-/// required to define ETH_BIGNUMBER_ROUNDING_MODE
+/// required to define HBF_BIGNUMBER_ROUNDING_MODE
 var BigNumber = require('bignumber.js');
 
-var ETH_UNITS = [
+var HBF_UNITS = [
     'wei',
     'kwei',
     'Mwei',
@@ -68,11 +68,11 @@ var ETH_UNITS = [
 ];
 
 module.exports = {
-    ETH_PADDING: 32,
-    ETH_SIGNATURE_LENGTH: 4,
-    ETH_UNITS: ETH_UNITS,
-    ETH_BIGNUMBER_ROUNDING_MODE: { ROUNDING_MODE: BigNumber.ROUND_DOWN },
-    ETH_POLLING_TIMEOUT: 1000/2,
+    HBF_PADDING: 32,
+    HBF_SIGNATURE_LENGTH: 4,
+    HBF_UNITS: HBF_UNITS,
+    HBF_BIGNUMBER_ROUNDING_MODE: { ROUNDING_MODE: BigNumber.ROUND_DOWN },
+    HBF_POLLING_TIMEOUT: 1000/2,
     defaultBlock: 'latest',
     defaultAccount: undefined
 };

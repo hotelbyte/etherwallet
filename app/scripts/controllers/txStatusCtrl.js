@@ -26,7 +26,7 @@ var txStatusCtrl = function($scope) {
         if (!$scope.$$phase) $scope.$apply();
     }
     var setUSDvalues = function() {
-        ajaxReq.getETHvalue(function(data) {
+        ajaxReq.getHBFvalue(function(data) {
             $scope.txInfo.gasPrice.usd = new BigNumber(data.usd).mul(new BigNumber($scope.txInfo.gasPrice.eth)).toString();
             applyScope();
         });
@@ -42,7 +42,7 @@ var txStatusCtrl = function($scope) {
                 from: ethUtil.toChecksumAddress(tx.from),
                 to: tx.to ? ethUtil.toChecksumAddress(tx.to) : '',
                 value: new BigNumber(tx.value).toString(),
-                valueStr: etherUnits.toEther(tx.value, 'wei') + " ETH",
+                valueStr: etherUnits.toEther(tx.value, 'wei') + " HBF",
                 gasLimit: new BigNumber(tx.gas).toString(),
                 gasPrice: {
                     wei: new BigNumber(tx.gasPrice).toString(),

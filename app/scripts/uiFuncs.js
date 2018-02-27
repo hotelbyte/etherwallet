@@ -43,7 +43,7 @@ uiFuncs.signTxTrezor = function(rawTx, txData, callback) {
         if (callback !== undefined) callback(rawTx);
     }
 
-    TrezorConnect.signEthereumTx(
+    TrezorConnect.signHotelbyteTx(
         txData.path,
         ethFuncs.getNakedAddress(rawTx.nonce),
         ethFuncs.getNakedAddress(rawTx.gasPrice),

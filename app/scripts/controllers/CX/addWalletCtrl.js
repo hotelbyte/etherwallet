@@ -36,7 +36,7 @@ var addWalletCtrl = function($scope, $sce) {
     $scope.$watch('walletType', function() {
         if ($scope.walletType == "ledger") {
             switch ($scope.nodeType) {
-                case nodes.nodeTypes.ETH:
+                case nodes.nodeTypes.HBF:
                     $scope.HDWallet.dPath = $scope.HDWallet.ledgerPath;
                     break;
                 case nodes.nodeTypes.ETC:
@@ -50,7 +50,7 @@ var addWalletCtrl = function($scope, $sce) {
             }
         } else if ($scope.walletType == "trezor") {
             switch ($scope.nodeType) {
-                case nodes.nodeTypes.ETH:
+                case nodes.nodeTypes.HBF:
                     $scope.HDWallet.dPath = $scope.HDWallet.trezorPath;
                     break;
                 case nodes.nodeTypes.ETC:
@@ -140,7 +140,7 @@ var addWalletCtrl = function($scope, $sce) {
         $scope.addWalletStats = "";
         try {
             if ($scope.walletType == "pasteprivkey" && $scope.requirePPass) {
-                $scope.wallet = Wallet.fromMyEtherWalletKey($scope.manualprivkey, $scope.privPassword);
+                $scope.wallet = Wallet.fromMyHotelWalletKey($scope.manualprivkey, $scope.privPassword);
                 $scope.addAccount.password = $scope.privPassword;
             } else if ($scope.walletType == "pasteprivkey" && !$scope.requirePPass) {
                 $scope.wallet = new Wallet($scope.manualprivkey);
@@ -267,7 +267,7 @@ var addWalletCtrl = function($scope, $sce) {
                 $scope.etherBalance = data.msg;
             } else {
                 $scope.etherBalance = etherUnits.toEther(data.data.balance, 'wei');
-                ajaxReq.getETHvalue(function(data) {
+                ajaxReq.getHBFvalue(function(data) {
                     $scope.usdBalance = etherUnits.toFiat($scope.etherBalance, 'ether', data.usd);
                     $scope.eurBalance = etherUnits.toFiat($scope.etherBalance, 'ether', data.eur);
                     $scope.btcBalance = etherUnits.toFiat($scope.etherBalance, 'ether', data.btc);

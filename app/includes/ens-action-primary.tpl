@@ -88,7 +88,7 @@
         </h5>
         <p>
           <small>
-            *This is the amount of ETH you send when placing your bid. It has no bearing on the *actual* amount you bid (above). It is simply to hide your real bid amount. It must be >= to your actual bid.*
+            *This is the amount of HBF you send when placing your bid. It has no bearing on the *actual* amount you bid (above). It is simply to hide your real bid amount. It must be >= to your actual bid.*
           </small>
         </p>
         <div class="input-group">

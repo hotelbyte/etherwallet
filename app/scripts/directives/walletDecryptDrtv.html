@@ -35,7 +35,7 @@
     <!-- Ledger -->
     <label aria-flowto="aria3"
            class="radio"
-           ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='POA'||ajaxReq.type=='TOMO'">
+           ng-show="ajaxReq.type=='HBF'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN HBF'||ajaxReq.type=='RINKEBY HBF'||ajaxReq.type=='KOVAN HBF'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='POA'||ajaxReq.type=='TOMO'">
       <input aria-flowto="aria3"
              type="radio"
              aria-label="Ledger Hardware Wallet"
@@ -47,7 +47,7 @@
     <!-- TREZOR -->
     <label class="radio"
            aria-flowto="aria4"
-           ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='RSK'||ajaxReq.type=='POA'||ajaxReq.type=='TOMO'||ajaxReq.type=='ELLA'">
+           ng-show="ajaxReq.type=='HBF'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN HBF'||ajaxReq.type=='RINKEBY HBF'||ajaxReq.type=='KOVAN HBF'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='RSK'||ajaxReq.type=='POA'||ajaxReq.type=='TOMO'||ajaxReq.type=='ELLA'">
       <input aria-flowto="aria4"
              type="radio"
              aria-label="Trezor Hardware Wallet"
@@ -59,7 +59,7 @@
     <!-- Digital Bitbox -->
     <label aria-flowto="aria5"
            class="radio"
-           ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'">
+           ng-show="ajaxReq.type=='HBF'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN HBF'||ajaxReq.type=='RINKEBY HBF'||ajaxReq.type=='KOVAN HBF'||ajaxReq.type=='EXP'">
       <input aria-flowto="aria5"
              type="radio"
              aria-label="Digital Bitbox hardware wallet"
@@ -233,7 +233,7 @@
            ng-hide="isSSL">
         <span class="text-danger"
               translate="ADD_Ledger_0a" >
-            Please use MyEtherWallet on a secure (SSL / HTTPS) connection to connect.
+            Please use MyHotelWallet on a secure (SSL / HTTPS) connection to connect.
         </span>
       </div>
       <div class="form-group">
@@ -264,10 +264,10 @@
       </div>
       <ul>
         <li class="u__protip">
-          <a href="https://ledger.zendesk.com/hc/en-us/articles/115005200009-How-to-use-MyEtherWallet-with-Ledger"
+          <a href="https://ledger.zendesk.com/hc/en-us/articles/115005200009-How-to-use-MyHotelWallet-with-Ledger"
              target="_blank"
              rel="noopener noreferrer">
-          How to use MyEtherWallet with your Ledger Hardware Wallet
+          How to use MyHotelWallet with your Ledger Hardware Wallet
           </a>
         </li>
         <li class="u__protip">
@@ -295,11 +295,11 @@
         <ul>
           <li ng-hide="isSSL"
               translate="ADD_Ledger_0a" >
-                Please use MyEtherWallet on a secure (SSL / HTTPS) connection to connect.
+                Please use MyHotelWallet on a secure (SSL / HTTPS) connection to connect.
           </li>
           <li>
-            <span translate="ADD_Ledger_2" ng-if="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'">
-              Open the Ethereum application (or a contract application)
+            <span translate="ADD_Ledger_2" ng-if="ajaxReq.type=='HBF'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN HBF'||ajaxReq.type=='RINKEBY HBF'||ajaxReq.type=='KOVAN HBF'">
+              Open the Hotelbyte application (or a contract application)
             </span>
             <span translate="ADD_Ledger_2_Exp" ng-if="ajaxReq.type=='EXP'">
               Open the Expanse application (or a contract application)
@@ -338,7 +338,7 @@
           <a href="https://blog.trezor.io/trezor-integration-with-myetherwallet-3e217a652e08#.n5fddxmdg"
              target="_blank"
              rel="noopener noreferrer">
-               How to use TREZOR with MyEtherWallet
+               How to use TREZOR with MyHotelWallet
           </a>
         </li>
         <li class="u__protip">
@@ -366,7 +366,7 @@
         <ul>
           <li ng-hide="isSSL"
               translate="ADD_Ledger_0a" >
-                Please use MyEtherWallet on a secure (SSL / HTTPS) connection to connect.
+                Please use MyHotelWallet on a secure (SSL / HTTPS) connection to connect.
           </li>
           <li>
                 Ensure you are not blocking pop-ups on this site.
@@ -401,7 +401,7 @@
           <a href="https://digitalbitbox.com/ethereum"
              target="_blank"
              rel="noopener noreferrer">
-               How to use Digital Bitbox with MyEtherWallet
+               How to use Digital Bitbox with MyHotelWallet
           </a>
         </li>
         <li class="u__protip">
@@ -456,7 +456,7 @@
           <a href="https://myetherwallet.github.io/knowledge-base/offline/running-myetherwallet-locally.html"
              target="_blank"
              rel="noopener noreferrer">
-              Running MEW Offline &amp; Locally
+              Running MyHOW Offline &amp; Locally
           </a>
         </li>
         <li>
@@ -468,7 +468,7 @@
         </li>
       </ul>
       <div class="form-group">
-        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://www.myetherwallet.com</code> &amp; <code>MYETHERWALLET LLC</code> in your URL bar.
+        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://www.myetherwallet.com</code> &amp; <code>MYHBFERWALLET LLC</code> in your URL bar.
       </div>
       <br />
       <div class="form-group">
@@ -532,7 +532,7 @@
           <a href="https://myetherwallet.github.io/knowledge-base/offline/running-myetherwallet-locally.html"
              target="_blank"
              rel="noopener noreferrer">
-              Running MEW Offline &amp; Locally
+              Running MyHOW Offline &amp; Locally
           </a>
         </li>
         <li>
@@ -544,7 +544,7 @@
         </li>
       </ul>
       <div class="form-group">
-        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://www.myetherwallet.com</code> &amp; <code>MYETHERWALLET LLC</code> in your URL bar.
+        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://www.myetherwallet.com</code> &amp; <code>MYHBFERWALLET LLC</code> in your URL bar.
       </div>
       <br />
       <div class="form-group">
@@ -613,7 +613,7 @@
           <a href="https://myetherwallet.github.io/knowledge-base/offline/running-myetherwallet-locally.html"
              target="_blank"
              rel="noopener noreferrer">
-              Running MEW Offline &amp; Locally
+              Running MyHOW Offline &amp; Locally
           </a>
         </li>
         <li>
@@ -625,7 +625,7 @@
         </li>
       </ul>
       <div class="form-group">
-        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://www.myetherwallet.com</code> &amp; <code>MYETHERWALLET LLC</code> in your URL bar.
+        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://www.myetherwallet.com</code> &amp; <code>MYHBFERWALLET LLC</code> in your URL bar.
       </div>
       <br />
       <div class="form-group">
@@ -713,7 +713,7 @@
           </h4>
 
           <p class="alert alert-danger"
-             ng-hide="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='ELLA'">
+             ng-hide="ajaxReq.type=='HBF'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN HBF'||ajaxReq.type=='RINKEBY HBF'||ajaxReq.type=='KOVAN HBF'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='ELLA'">
                 We do not know the correct path for this network.
                 <a href="https://github.com/kvhnuke/etherwallet/issues"
                    target="_blank"
@@ -734,21 +734,21 @@
                       value="{{HDWallet.defaultDPath}}"/>
                 <span ng-bind="HDWallet.defaultDPath"></span>
                 <p class="small">
-                  Jaxx, Metamask, Exodus, imToken, TREZOR (ETH) &amp; Digital Bitbox
+                  Jaxx, Metamask, Exodus, imToken, TREZOR (HBF) &amp; Digital Bitbox
                 </p>
               </label>
             </div>
 
             <div class="col-sm-4">
               <label class="radio small">
-                <input aria-describedby="Path: Ledger (ETH) {{HDWallet.ledgerPath}}"
+                <input aria-describedby="Path: Ledger (HBF) {{HDWallet.ledgerPath}}"
                        ng-change="onHDDPathChange()"
                        ng-model="HDWallet.dPath"
                        type="radio"
                       value="{{HDWallet.ledgerPath}}"/>
                 <span ng-bind="HDWallet.ledgerPath"></span>
                 <p class="small">
-                  Ledger (ETH)
+                  Ledger (HBF)
                 </p>
               </label>
 

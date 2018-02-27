@@ -41,7 +41,7 @@
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_4">
-                Migrating to/from MyEtherWallet
+                Migrating to/from MyHotelWallet
           </a>
         </li>
       </ul>

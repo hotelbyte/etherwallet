@@ -128,7 +128,7 @@
     ENS Debugger & Data Grabber
   </h1>
   <h2 class="p">
-    Ethereum Name Service Data String Generator
+    Hotelbyte Name Service Data String Generator
   </h2>
   <p class="text-danger">
     This is meant to be a helpful tool for debugging and checking and generating manual reveals when necessary. Use at your own risk. There is no validation on these fields.
@@ -161,7 +161,7 @@
   <section class="row">
     <div class="form-group col-sm-6">
       <label>
-        Amount you Bid (ETH)
+        Amount you Bid (HBF)
       </label>
       <input class="form-control" type="text" ng-model="bidEth" ng-change="toBidWei()" />
     </div>

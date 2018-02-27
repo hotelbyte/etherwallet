@@ -116,7 +116,7 @@ Wallet.prototype.setBalance = function(callback) {
         if (data.error) parentObj.balance = data.msg;
         else {
             parentObj.balance = etherUnits.toEther(data.data.balance, 'wei');
-            ajaxReq.getETHvalue(function(data) {
+            ajaxReq.getHBFvalue(function(data) {
                 parentObj.usdPrice   = etherUnits.toFiat('1', 'ether', data.usd);
                 parentObj.gbpPrice   = etherUnits.toFiat('1', 'ether', data.gbp);
                 parentObj.eurPrice   = etherUnits.toFiat('1', 'ether', data.eur);
@@ -246,12 +246,12 @@ Wallet.prototype.toJSON = function() {
         checksumAddress: this.getChecksumAddressString(),
         privKey: this.getPrivateKeyString(),
         pubKey: this.getPublicKeyString(),
-        publisher: "MyEtherWallet",
+        publisher: "MyHotelWallet",
         encrypted: false,
         version: 2
     }
 }
-Wallet.fromMyEtherWallet = function(input, password) {
+Wallet.fromMyHotelWallet = function(input, password) {
     var json = (typeof input === 'object') ? input : JSON.parse(input)
     var privKey
     if (!json.locked) {
@@ -282,7 +282,7 @@ Wallet.fromMyEtherWallet = function(input, password) {
     }
     return wallet
 }
-Wallet.fromMyEtherWalletV2 = function(input) {
+Wallet.fromMyHotelWalletV2 = function(input) {
     var json = (typeof input === 'object') ? input : JSON.parse(input);
     if (json.privKey.length !== 64) {
         throw new Error('Invalid private key length');
@@ -302,7 +302,7 @@ Wallet.fromEthSale = function(input, password) {
     }
     return wallet
 }
-Wallet.fromMyEtherWalletKey = function(input, password) {
+Wallet.fromMyHotelWalletKey = function(input, password) {
     var cipher = input.slice(0, 128)
     cipher = Wallet.decodeCryptojsSalt(cipher)
     var evp = Wallet.evp_kdf(new Buffer(password), cipher.salt, {
@@ -410,7 +410,7 @@ Wallet.walletRequirePass = function(ethjson) {
     else if (jsonArr.Crypto != null || jsonArr.crypto != null) return true
     else if (jsonArr.hash != null && jsonArr.locked) return true;
     else if (jsonArr.hash != null && !jsonArr.locked) return false;
-    else if (jsonArr.publisher == "MyEtherWallet" && !jsonArr.encrypted) return false;
+    else if (jsonArr.publisher == "MyHotelWallet" && !jsonArr.encrypted) return false;
     else
         throw globalFuncs.errorMsgs[2];
 }
@@ -418,8 +418,8 @@ Wallet.getWalletFromPrivKeyFile = function(strjson, password) {
     var jsonArr = JSON.parse(strjson);
     if (jsonArr.encseed != null) return Wallet.fromEthSale(strjson, password);
     else if (jsonArr.Crypto != null || jsonArr.crypto != null) return Wallet.fromV3(strjson, password, true);
-    else if (jsonArr.hash != null) return Wallet.fromMyEtherWallet(strjson, password);
-    else if (jsonArr.publisher == "MyEtherWallet") return Wallet.fromMyEtherWalletV2(strjson);
+    else if (jsonArr.hash != null) return Wallet.fromMyHotelWallet(strjson, password);
+    else if (jsonArr.publisher == "MyHotelWallet") return Wallet.fromMyHotelWalletV2(strjson);
     else
         throw globalFuncs.errorMsgs[2];
 }

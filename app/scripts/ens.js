@@ -14,8 +14,8 @@ var ens = function() {
     this.deedABI = {};
     for (var i in deedInterface) this.deedABI[deedInterface[i].name] = deedInterface[i];
     switch (ajaxReq.type) {
-        case nodes.nodeTypes.ETH:
-            _this.setCurrentRegistry(ens.registry.ETH);
+        case nodes.nodeTypes.HBF:
+            _this.setCurrentRegistry(ens.registry.HBF);
             break;
         case nodes.nodeTypes.Rinkeby:
             _this.setCurrentRegistry(ens.registry.Rinkeby);
@@ -28,7 +28,7 @@ var ens = function() {
     }
 };
 ens.registry = {
-    ETH: require('./ensConfigs/ETHConfig.json'),
+    HBF: require('./ensConfigs/ETHConfig.json'),
     Rinkeby: require('./ensConfigs/RinkebyConfig.json'),
     ROPSTEN: require('./ensConfigs/ROPConfig.json'),
     NULL: {}

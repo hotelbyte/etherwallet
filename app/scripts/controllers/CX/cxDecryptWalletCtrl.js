@@ -38,7 +38,7 @@ var cxDecryptWalletCtrl = function($scope, $sce, walletService) {
 		try {
             var priv = $scope.getPrivFromAdd();
             if (priv.length==132)
-				$scope.wallet = Wallet.fromMyEtherWalletKey(priv, $scope.password);
+				$scope.wallet = Wallet.fromMyHotelWalletKey(priv, $scope.password);
             else
                 $scope.wallet = Wallet.getWalletFromPrivKeyFile(priv, $scope.password);
             walletService.password = $scope.password;
