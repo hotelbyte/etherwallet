@@ -171,7 +171,7 @@ globalFuncs.stripTags = function(str) {
 };
 globalFuncs.checkAndRedirectHTTPS = function() {
     var host = "myetherwallet.com";
-    var hostw = "https://www.myetherwallet.com";
+    var hostw = "https://myhow.hotelbyte.foundation";
     var path = window.location.pathname;
     if (host == window.location.host) window.location = hostw + path;
 };

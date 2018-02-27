@@ -260,7 +260,7 @@ GEN_Unlock                  : 'Unlock your wallet to see your address',
 GAS_PRICE_Desc              : 'Gas Price is the amount you pay per unit of gas. `TX fee = gas price * gas limit` & is paid to miners for including your TX in a block. Higher the gas price = faster transaction, but more expensive. Default is `41 GWEI`.',
 GAS_LIMIT_Desc              : 'Gas limit is the amount of gas to send with your TX. `TX fee` = gas price * gas limit & is paid to miners for including your TX in a block. Increasing this number will not get your TX mined faster. Sending HBF = `21000`. Sending Tokens = ~`200000`.',
 NONCE_Desc                  : 'The nonce is the number of transactions sent from a given address. It ensures transactions are sent in order & not more than once.',
-TXFEE_Desc                  : 'The TX Fee is paid to miners for including your TX in a block. Is is the `gas limit` * `gas price`. [You can convert GWEI -> HBF here](https://www.myetherwallet.com/helpers.html)',
+TXFEE_Desc                  : 'The TX Fee is paid to miners for including your TX in a block. Is is the `gas limit` * `gas price`. [You can convert GWEI -> HBF here](https://myhow.hotelbyte.foundation/helpers.html)',
 
 
 
@@ -587,7 +587,7 @@ ERROR_24                    : 'Please enter a valid port. ', // 24
 ERROR_25                    : 'Please enter a valid chain ID. ', // 25
 ERROR_26                    : 'Please enter a valid ABI. ', // 26
 ERROR_27                    : 'Minimum amount: 0.01. Max amount: ', // 27
-ERROR_28                    : '**Você precisa do seu arquivo de armazenamento de chaves & senha** (ou Chave Privada) para acessar essa carteira no futuro. Por favor, salve e armazene ela externamente! Não há como recuperar uma carteira se você não salvar isso. Leia a [página de ajuda](https://www.myetherwallet.com/#help) para instruções. ',
+ERROR_28                    : '**Você precisa do seu arquivo de armazenamento de chaves & senha** (ou Chave Privada) para acessar essa carteira no futuro. Por favor, salve e armazene ela externamente! Não há como recuperar uma carteira se você não salvar isso. Leia a [página de ajuda](https://myhow.hotelbyte.foundation/#help) para instruções. ',
 ERROR_29                    : 'Please enter a valid user and password. ', // 29
 ERROR_30                    : 'Please enter a valid name (7+ characters, limited punctuation) ', // 30
 ERROR_31                    : 'Please enter a valid secret phrase. ', // 31
@@ -633,7 +633,7 @@ PARITY_InvalidGasLimit      : "Supplied gas is beyond limit.",
 translate_version           : '0.3 ',
 Translator_Desc             : 'Thank you to our translators ',
 // fill in your name and address
-TranslatorName_1            : '[ Pedro "ShooterXD" Vieira ](https://www.myetherwallet.com/?gaslimit=21000&to=0x24eB7d82166361A8B69adE6FEA187Cb00FD7c7E1&value=1.0#send-transaction) ',
+TranslatorName_1            : '[ Pedro "ShooterXD" Vieira ](https://myhow.hotelbyte.foundation/?gaslimit=21000&to=0x24eB7d82166361A8B69adE6FEA187Cb00FD7c7E1&value=1.0#send-transaction) ',
 TranslatorAddr_1            : '',
 /* Translator 1             : Insert Comments Here */
 TranslatorName_2            : '[ Marcos Faria Arruda ](https://www.jusadvisor.com)',
@@ -862,7 +862,7 @@ HELP_Sec_Title              : 'Security ',
 HELP_Sec_Desc_1             : 'If one of your first questions is "Why should I trust these people?", that is a good thing. Hopefully the following will help ease your fears. ',
 HELP_Sec_Desc_2             : 'We\'ve been up and running since August 2015. If you search for ["myetherwallet" on reddit](https://www.reddit.com/search?q=myetherwallet), you can see numerous people who use us with great success. ',
 HELP_Sec_Desc_3             : 'We aren\'t going to take your money or steal your private key(s). There is no malicious code on this site. In fact the "GENERATE WALLET" pages are completely client-side. That means that all the code is executed on ** your computer** and it is never saved and transmitted anywhere. ',
-HELP_Sec_Desc_4             : 'Check the URL -- This site is being served through GitHub and you can see the source code here: [https://github.com/kvhnuke/etherwallet/tree/gh-pages](https://github.com/kvhnuke/etherwallet/tree/gh-pages) to [https://www.myetherwallet.com](https://www.myetherwallet.com). ',
+HELP_Sec_Desc_4             : 'Check the URL -- This site is being served through GitHub and you can see the source code here: [https://github.com/kvhnuke/etherwallet/tree/gh-pages](https://github.com/kvhnuke/etherwallet/tree/gh-pages) to [https://myhow.hotelbyte.foundation](https://myhow.hotelbyte.foundation). ',
 HELP_Sec_Desc_5             : 'For generating wallets, you can download the [source code and run it locally](https://github.com/kvhnuke/etherwallet/releases/latest). See #5 above. ',
 HELP_Sec_Desc_6             : 'Generate a test wallet and check and see what network activity is happening. The easiest way for you to do this is to right click on the page and click "inspect element". Go to the "Network" tab. Generate a test wallet. You will see there is no network activity. You may see something happening that looks like data:image/gif and data:image/png. Those are the QR codes being generated...on your computer...by your computer. No bytes were transferred. ',
 HELP_Sec_Desc_8             : 'If you do not feel comfortable using this tool, then by all means, do not use it. We created this tool as a helpful way for people to generate wallets and make transactions without needing to dive into command line or run a full node. Again, feel free to reach out if you have concerns and we will respond as quickly as possible. Thanks! ',

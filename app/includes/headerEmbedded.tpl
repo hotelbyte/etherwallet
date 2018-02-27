@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>MyHow.hotelbyte.foundation</title>
-  <link rel="canonical" href="https://www.myetherwallet.com" />
+  <link rel="canonical" href="https://myhow.hotelbyte.foundation" />
   <meta name="description" content="MyHow.hotelbyte.foundation is a free, open-source, client-side interface for generating Hotelbyte wallets &amp; more. Interact with the Hotelbyte blockchain easily &amp; securely. Double-check the URL ( myhow.hotelbyte.foundation ) before unlocking your wallet.">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">

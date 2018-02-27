@@ -15,7 +15,7 @@
 
         <p class="small"><strong> Translations of MyHotelWallet: </strong> The community has done an amazing job translating MyHotelWallet into a variety of languages. However, MyHotelWallet can only verify the validity and accuracy of the information provided in English and, because of this, the English version of our website is the official text. </p>
 
-        <p class="small"><strong>MIT License</strong> Copyright &copy; 2015-2017 MyHotelWallet LLC</p>
+        <p class="small"><strong>LGPL v3.0 License</strong> Copyright &copy; 2018 Hotelbyte Foundation</p>
 
         <p class="small">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 

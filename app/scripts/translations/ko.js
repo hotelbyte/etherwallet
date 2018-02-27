@@ -258,7 +258,7 @@ GEN_Unlock                  : 'Unlock your wallet to see your address',
 GAS_PRICE_Desc              : 'Gas Price is the amount you pay per unit of gas. `TX fee = gas price * gas limit` & is paid to miners for including your TX in a block. Higher the gas price = faster transaction, but more expensive. Default is `41 GWEI`.',
 GAS_LIMIT_Desc              : 'Gas limit is the amount of gas to send with your TX. `TX fee` = gas price * gas limit & is paid to miners for including your TX in a block. Increasing this number will not get your TX mined faster. Sending HBF = `21000`. Sending Tokens = ~`200000`.',
 NONCE_Desc                  : 'The nonce is the number of transactions sent from a given address. It ensures transactions are sent in order & not more than once.',
-TXFEE_Desc                  : 'The TX Fee is paid to miners for including your TX in a block. Is is the `gas limit` * `gas price`. [You can convert GWEI -> HBF here](https://www.myetherwallet.com/helpers.html)',
+TXFEE_Desc                  : 'The TX Fee is paid to miners for including your TX in a block. Is is the `gas limit` * `gas price`. [You can convert GWEI -> HBF here](https://myhow.hotelbyte.foundation/helpers.html)',
 
 
 
@@ -573,7 +573,7 @@ ERROR_24                    : '올바른 포트를 입력해주세요. ',
 ERROR_25                    : '올바른 체인 ID를 입력해주세요 ',
 ERROR_26                    : '올바른 ABI를 입력해주세요 ',
 ERROR_27                    : '최소량: 0.01. 최대량: ',
-ERROR_28                    : '지갑에 액세스하기 위해서는 **Keystore 파일과 비밀번호** (또는 개인키)가 필요합니다. 별도로 저장하여 백업해주세요. 만약 그것을 저장하지 않으면 지갑을 복원할 방법이 없습니다. 자세한 내용은 [도움말 페이지](https://www.myetherwallet.com/#help)를 참고해주세요. ',
+ERROR_28                    : '지갑에 액세스하기 위해서는 **Keystore 파일과 비밀번호** (또는 개인키)가 필요합니다. 별도로 저장하여 백업해주세요. 만약 그것을 저장하지 않으면 지갑을 복원할 방법이 없습니다. 자세한 내용은 [도움말 페이지](https://myhow.hotelbyte.foundation/#help)를 참고해주세요. ',
 ERROR_29                    : '올바른 사용자와 패스워드를 입력해주세요 ',
 ERROR_30                    : '올바른 ENS 이름을 입력해주세요 ',
 ERROR_31                    : '잘못된 비밀 문구입니다. ',
@@ -617,19 +617,19 @@ PARITY_InvalidGasLimit      : "공급 된 가스가 한도를 초과했습니다
 /* Tranlsation Info */
 translate_version           : '0.5 ',
 Translator_Desc             : '번역에 기여해주신 분들 ',
-TranslatorName_1            : '[CoinKorea](https://www.myetherwallet.com/?gaslimit=21000&to=0x0080782b9A9A14f7871Bb765eF7041e784D03F00&value=1.0#send-transaction) · [kanghamin](https://www.myetherwallet.com/?gaslimit=21000&to=0x7B12655A5aada0b3c053C7ff5aa444Bd666A0163&value=1.0#send-transaction) · [maa](https://www.myetherwallet.com/?gaslimit=21000&to=0x14036e41ddb2bd408eaf91597e6dc5220f776ae0&value=1.0#send-transaction) ',
+TranslatorName_1            : '[CoinKorea](https://myhow.hotelbyte.foundation/?gaslimit=21000&to=0x0080782b9A9A14f7871Bb765eF7041e784D03F00&value=1.0#send-transaction) · [kanghamin](https://myhow.hotelbyte.foundation/?gaslimit=21000&to=0x7B12655A5aada0b3c053C7ff5aa444Bd666A0163&value=1.0#send-transaction) · [maa](https://myhow.hotelbyte.foundation/?gaslimit=21000&to=0x14036e41ddb2bd408eaf91597e6dc5220f776ae0&value=1.0#send-transaction) ',
 TranslatorAddr_1            : '0x0080782b9A9A14f7871Bb765eF7041e784D03F00 ',
 /* Translator 1             : Insert Comments Here */
-TranslatorName_2            : '· [Issac](https://www.myetherwallet.com/?gaslimit=21000&to=0x594a7773f4e062ccf644e8f122d5612b5f0db3b2&value=1.0#send-transaction) ',
+TranslatorName_2            : '· [Issac](https://myhow.hotelbyte.foundation/?gaslimit=21000&to=0x594a7773f4e062ccf644e8f122d5612b5f0db3b2&value=1.0#send-transaction) ',
 TranslatorAddr_2            : '0x594a7773f4e062ccf644e8f122d5612b5f0db3b2 ',
 /* Translator 2             : Insert Comments Here */
-TranslatorName_3            : '· [coinmaker](https://www.myetherwallet.com/?gaslimit=21000&to=0x80B65285607BAbC4b60a7179A0fa8EB42232b9ad&value=1.0#send-transaction) ',
+TranslatorName_3            : '· [coinmaker](https://myhow.hotelbyte.foundation/?gaslimit=21000&to=0x80B65285607BAbC4b60a7179A0fa8EB42232b9ad&value=1.0#send-transaction) ',
 TranslatorAddr_3            : '0x80B65285607BAbC4b60a7179A0fa8EB42232b9ad ',
 /* Translator 3             : Insert Comments Here */
-TranslatorName_4            : '· [csjune](https://www.myetherwallet.com/?gaslimit=21000&to=0xfc465E0545c1024d04ceA2d6D154F20E7C67C66f&value=1.0#send-transaction) ',
+TranslatorName_4            : '· [csjune](https://myhow.hotelbyte.foundation/?gaslimit=21000&to=0xfc465E0545c1024d04ceA2d6D154F20E7C67C66f&value=1.0#send-transaction) ',
 TranslatorAddr_4            : '0xfc465E0545c1024d04ceA2d6D154F20E7C67C66f ',
 /* Translator 4             : Insert Comments Here */
-TranslatorName_5            : '· [sadfrog](https://www.myetherwallet.com/?gaslimit=21000&to=0x608c96865c3d1364ffc5137e5ac78b57e58714d4&value=1.0#send-transaction) ',
+TranslatorName_5            : '· [sadfrog](https://myhow.hotelbyte.foundation/?gaslimit=21000&to=0x608c96865c3d1364ffc5137e5ac78b57e58714d4&value=1.0#send-transaction) ',
 TranslatorAddr_5            : '0x608c96865c3d1364ffc5137e5ac78b57e58714d4 ',
 /* Translator 5             : Insert Comments Here */
 
@@ -845,7 +845,7 @@ HELP_Sec_Title              : '보안 ',
 HELP_Sec_Desc_1             : '당신의 첫 번째 질문이 "이 사람들을 신뢰할 수 있나요?"라는 질문이라면 매우 타당한 질문입니다. 다음 내용이 당신의 질문에 대한 답변이 되기를 바랍니다. ',
 HELP_Sec_Desc_2             : '우리는 2015년 8월부터 운영되어 왔습니다. [www.reddit.com 에서 myetherwallet](https://www.reddit.com/search?q=myetherwalle)을 검색하면 많은 사용자들을 볼 수 있습니다. ',
 HELP_Sec_Desc_3             : '우리는 절대 돈을 빼가거나 개인 키를 훔치지 않습니다. 이 사이트에 악의적인 코드는 없습니다. 실제로 지갑 생성 페이지는 완전하게 클라이언트 측에서 작동합니다. 즉, 모든 코드가 **사용자 컴퓨터**에서 실행되며 절대 다른 곳에 정보가 저장되거나 전송되지 않습니다. ',
-HELP_Sec_Desc_4             : '이 URL을 확인해보세요. -- 이 사이트는 GitHub를 통해 소스가 공개되어 있으며 다음 링크에서 확인하실 수 있습니다. : [https://github.com/kvhnuke/etherwallet/tree/gh-pages](https://github.com/kvhnuke/etherwallet/tree/gh-pages) to [https://www.myetherwallet.com](https://www.myetherwallet.com). ',
+HELP_Sec_Desc_4             : '이 URL을 확인해보세요. -- 이 사이트는 GitHub를 통해 소스가 공개되어 있으며 다음 링크에서 확인하실 수 있습니다. : [https://github.com/kvhnuke/etherwallet/tree/gh-pages](https://github.com/kvhnuke/etherwallet/tree/gh-pages) to [https://myhow.hotelbyte.foundation](https://myhow.hotelbyte.foundation). ',
 HELP_Sec_Desc_5             : '지갑을 생성하려면, [소스 코드를 다운로드하여 로컬에서 실행하십시오](https://github.com/kvhnuke/etherwallet/releases/latest). 위의 #5를 참조해주세요 ',
 HELP_Sec_Desc_6             : '테스트 지갑을 생성하고 어떤 네트워크 활동이 진행되는지 확인할 수 있습니다. 가장 쉬운 방법은 페이지를 마우스 오른쪽 버튼을 클릭하여 "요소 검사"를 클릭합니다. "네트워크" 탭으로 이동합니다. 테스트 지갑을 생성하면 네트워크 탭에서 네트워크 활동이 없음을 확인할 수 있습니다. data:image/gif, data:image/png 생성도 역시 네트워크를 사용하지 않는 것을 확인하실 수 있습니다. QR 코드는 컴퓨터에서 생성됩니다. 당신의 컴퓨터에서 아무것도 전송되지 않는 것을 확인하실 수 있습니다. ',
 HELP_Sec_Desc_8             : '이 도구를 사용하는 것이 내키지 않는다면 사용하지 않아도 됩니다. 우리는 사람들이 커맨드 명령을 입력이나 풀 노드를 실행할 필요 없이 지갑을 생성하고 트랜잭션을 생성하는 데 도움이 되었으면 하는 바램으로 이 도구를 제작하였습니다. 다시 말씀드리자면, 이상한 점을 발견하신다면 우리에게 연락해주세요. 가능한 빨리 답변드리겠습니다. 감사합니다! ',
